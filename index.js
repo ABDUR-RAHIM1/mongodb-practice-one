@@ -70,8 +70,9 @@ app.post("/products", async (req, res)=>{
         //     price : price,
         //     description: description, 
         // })
-
-        const productData = await Product.insertMany([
+ // post single object , then modal name and uses save() function   
+        
+      const productData = await Product.insertMany([
              {
                 "title" : "i phone 7 ",
                  "price" : 211,
